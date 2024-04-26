@@ -7,7 +7,14 @@ Rails.application.routes.draw do
 
   get("/directors/eldest", {:controller => "directors", :action => "eldest_directors" })
 
+  get("/directors/:directors_details", {:controller => "directors", :action => "all_directors_details" })
+
   get("/actors", {:controller => "actors", :action => "all_actors"})
 
+  get("/actors/:actors_details", {:controller => "actors", :action => "all_actors_details"})
+
   get("/movies", {:controller => "movies", :action => "all_movies"})
+
+  get("/movies/:movies_details", {:controller => "movies", :action => "all_movies_details"})
+
 end

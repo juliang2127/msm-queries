@@ -10,4 +10,8 @@ class DirectorsController < ApplicationController
   def eldest_directors
     render({:template => "misc_templates/eldest_director"})
   end
+
+  def all_directors_details
+    render({ :template => "misc_templates/directors_details"})
+  end
 end
